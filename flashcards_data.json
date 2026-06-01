@@ -1,0 +1,92 @@
+{
+  "decks": {
+    "tijdlijn": {
+      "name": "Tijdlijn (RPO/RTO/WRT/MAO)",
+      "cards": [
+        {"front": "RPO", "back": "Recovery Point Objective — maximaal aanvaardbaar dataverlies in tijd", "analogie": "Hoe vaak druk je CTRL+S?"},
+        {"front": "RTO", "back": "Recovery Time Objective — maximale tijd dat systemen plat mogen liggen", "analogie": "Bol.com bezorgtijd"},
+        {"front": "WRT", "back": "Work Recovery Time — tijd om verloren data weer in te voeren NA systeemherstel", "analogie": "Nieuwe telefoon, alle apps weer downloaden"},
+        {"front": "MAO", "back": "Maximum Acceptable Outage = RTO + WRT. Uiterste grens voor onherstelbare schade", "analogie": "Opa op Schiphol — 1 min te laat = vlucht weg"},
+        {"front": "RT", "back": "Recovery Time — de werkelijke tijd die nodig was om te herstellen", "analogie": "Stopwatch in de praktijk"},
+        {"front": "BAU", "back": "Business As Usual — alles draait weer normaal in vredestijd"},
+        {"front": "Wat is een calamiteit?", "back": "Een grote verstoring waardoor het bedrijf zijn primaire proces niet meer kan uitvoeren (brand, hack, datacenter weg)"},
+        {"front": "Kan RTO groter zijn dan MAO?", "back": "NEE. Onmogelijk. MAO is je dood-grens. RTO > MAO = bedrijf failliet voordat IT klaar is"}
+      ]
+    },
+    "frameworks": {
+      "name": "De 3 Frameworks",
+      "cards": [
+        {"front": "ENISA", "back": "European Network and Information Security Agency. EU 2004. 4 Kwadranten: Define / Conduct BIA / Design BCM / Deliver BCP"},
+        {"front": "NIST CSF", "back": "USA cybersecurity framework. 5 Functies: Identify / Protect / Detect / Respond / Recover. BCM zit in Respond + Recover"},
+        {"front": "ISO 22301", "back": "Internationale standaard voor BCMS. Gebruikt PDCA cyclus (Plan/Do/Check/Act). Gouden norm voor continu verbeteren"},
+        {"front": "NIST SP 800-34", "back": "7 stappen contingency planning. Ondersteunt NIST CSF"},
+        {"front": "NIST SP 800-53", "back": "Security en privacy controls catalogus"},
+        {"front": "PDCA", "back": "Plan-Do-Check-Act. Cyclus voor continu verbeteren. Onderdeel van ISO 22301"},
+        {"front": "BIA", "back": "Business Impact Analysis — onderzoek welke processen/afdelingen kritiek zijn om eerst te redden"},
+        {"front": "4 ENISA kwadranten", "back": "1) Define scope, 2) Conduct BIA, 3) Design BCM strategy, 4) Deliver BCP"}
+      ]
+    },
+    "audit": {
+      "name": "Audit & ISAE 3402",
+      "cards": [
+        {"front": "ISAE 3402", "back": "International Standard on Assurance Engagements 3402. Audit-standaard voor service providers. Vervanger van SAS70"},
+        {"front": "SAS70", "back": "Statement on Auditing Standards 70. AICPA standaard. Voorganger van ISAE 3402 / SSAE 18"},
+        {"front": "ISAE 3402 Type 1", "back": "Snapshot rapport — toont alleen OPZET en BESTAAN van controls op één moment. Een foto"},
+        {"front": "ISAE 3402 Type 2", "back": "Periode rapport — toont OPZET + BESTAAN + WERKING gedurende periode (meestal 6-12 maanden). Een film"},
+        {"front": "Welke type wil je in supply chain?", "back": "Type 2 — bewijst dat controls daadwerkelijk hebben gewerkt over tijd, niet alleen op 1 dag waren ontworpen"},
+        {"front": "Waarom belangrijk voor BCM?", "back": "Bewijs effectiviteit naar stakeholders, verzekeraars, klanten. Cruciaal bij outsourcing en cloud-providers"},
+        {"front": "ISAE 3402 garantie?", "back": "NEE — geen garantie voor volledige veiligheid. Slechts assurance over interne beheersing"}
+      ]
+    },
+    "leanbcm": {
+      "name": "Lean BCM (IC 4)",
+      "cards": [
+        {"front": "Wat is Lean BCM?", "back": "Pragmatische snelle aanpak — waarde creëren + verspilling elimineren. Geen papieren tijger maar snel werkende plannen"},
+        {"front": "Klassieke methode probleem", "back": "10 stappen, lang proces, papieren tijger, draagvlak verdwijnt, geen resultaten op korte termijn"},
+        {"front": "Lean BCM Stap 0", "back": "Preventie en Fundament: brand/BHV/IB-baseline/fysieke beveiliging/Arbo. RANDVOORWAARDE — zonder dit faalt rest"},
+        {"front": "Lean BCM Stap 1", "back": "Bedrijfscontinuïteit NU!!! Workshop 'red de organisatie'. Calamiteitenscenarios → strategie → BCP. 1 dag = werkend plan"},
+        {"front": "Lean BCM Stap 2", "back": "Optimaliseren: IST (huidig) vs SOLL (wens) → GAP-analyse → projecten om gap te dichten"},
+        {"front": "Calamiteitenscenario", "back": "Beschrijving van een calamiteit en gevolgen op huisvesting/personeel/systemen"},
+        {"front": "Continuïteitsstrategie", "back": "Het plan om uit de crisissituatie te komen"},
+        {"front": "Continuïteitsplan (BCP)", "back": "Deelplan van de strategie met specifieke acties op een bepaald terrein"},
+        {"front": "Slimme maatregelen", "back": "Cloud / BYOD / thuiswerk / relaties OOV / leveranciers / verzekeraars / concullega-deals"},
+        {"front": "Concullega-deal voorbeeld", "back": "Vooraf afspraak met buurfabriek: brandt mijn fabriek af = ik leen jouw nachtshift voor 2 weken"}
+      ]
+    },
+    "bcp": {
+      "name": "BCP & Plannen",
+      "cards": [
+        {"front": "BCP", "back": "Business Continuity Plan — deelplan met concrete acties voor specifiek terrein"},
+        {"front": "CMP", "back": "Crisis Management Plan — overkoepelend plan voor crisisbeheersing (woordvoerder, media, directie)"},
+        {"front": "IRP", "back": "Incident Response Plan — plan voor reactie op incidenten"},
+        {"front": "DRP", "back": "Disaster Recovery Plan — IT-noodplan om servers/data te herstellen"},
+        {"front": "8 BCP elementen (1-4)", "back": "1) Doel/scope/doelstellingen, 2) Rollen+verantwoordelijkheden, 3) Implementatie-acties, 4) Activeringscriteria + info"},
+        {"front": "8 BCP elementen (5-8)", "back": "5) Interne/externe afhankelijkheden, 6) Middelen-eisen, 7) Rapportage-eisen, 8) Beëindigingsproces"},
+        {"front": "Wat is de strikvraag over BCP?", "back": "Het 8e element: Beëindigingsproces. Wie heeft mandaat om crisis af te blazen en terug te keren naar BAU?"},
+        {"front": "Waarom moet je BCP testen?", "back": "IT/supply chains veranderen constant. Test valideert of strategie nog klopt. Verplicht volgens PDCA continuous improvement"}
+      ]
+    },
+    "itil": {
+      "name": "ITIL & ITSCM (HC 1.3)",
+      "cards": [
+        {"front": "ITIL", "back": "IT Infrastructure Library — best practice voor IT Service Management. Origin: UK CCTA, jaren '80"},
+        {"front": "CCTA", "back": "Central Computer and Telecommunications Agency — UK overheidsorganisatie die ITIL ontwikkelde"},
+        {"front": "SLM", "back": "Service Level Management — kern van ITIL. Balans tussen vraag en aanbod van IT, vastgelegd in SLA"},
+        {"front": "SLA", "back": "Service Level Agreement — contract met kwaliteits-afspraken + security paragraaf + BCM/continuity afspraken"},
+        {"front": "ITSCM", "back": "IT Service Continuity Management — de IT-tak van BCM. Zorgt dat IT zich herstelt binnen tijden afgesproken met business"},
+        {"front": "CMDB", "back": "Configuration Management Database — registratie van BIV-eisen en alle IT componenten"},
+        {"front": "SPOF", "back": "Single Point of Failure — punt waar storing tot totale uitval kan leiden. Focus van Availability MGT"},
+        {"front": "BIV", "back": "Beschikbaarheid / Integriteit / Vertrouwelijkheid — 3 kernfactoren van informatiebeveiliging"},
+        {"front": "ITSCM 4 fases", "back": "1) Initiatie (scope), 2) Requirements + Strategie (BIA + risico), 3) Implementatie (procedures + standby + test), 4) Operationeel MGT (training/audits/change)"},
+        {"front": "Verschil Availability MGT vs ITSCM", "back": "Availability MGT = voorkomt dat 1 component-storing leidt tot systeem-uitval (focus SPOF). ITSCM = werkwijze om risico's te beperken bij uitval (focus herstel)"},
+        {"front": "Onzichtbare scheidingslijn", "back": "Tussen BCM (Business: mensen, processen) en ITSCM (IT: apps, data, infra). De lijn = SLA's"},
+        {"front": "Verschil incident vs ramp", "back": "Incident = 1 component faalt. Ramp = lang verlies van volledig serverpark/datacenter. ITSCM start pas bij rampen"},
+        {"front": "ITIL v2 vs v3 vs 4", "back": "v2: 2 blokken (Service Support + Service Delivery). v3: lifecycle + Continual Service Improvement. v4: waarde creëren, 7 ipv 9 principes, aanpasbaar"},
+        {"front": "Cloud modellen", "back": "On-prem → IAAS (infra) → PAAS (platform) → SAAS (software). Hoe verder rechts, hoe meer uitbesteed"},
+        {"front": "ITIL slogan", "back": "'Schoenmaker, blijf bij je leest' — IT doet IT, business doet business, samen waarde leveren"},
+        {"front": "Wie communiceert tijdens IT-storing?", "back": "Service Level Manager (SLM) — NIET de Service Desk. SLM is in vroeg stadium betrokken bij herstel"},
+        {"front": "5 toegevoegde-waarden ITSCM", "back": "1) Lagere verzekeringspremies, 2) Compliance (NEN7510/DNB), 3) Goede business relaties, 4) Positief imago/volwassenheid, 5) Concurrentievoordeel"}
+      ]
+    }
+  }
+}

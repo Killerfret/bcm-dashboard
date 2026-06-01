@@ -1,0 +1,184 @@
+{
+  "questions": [
+    {
+      "q": "Wat is RPO?",
+      "options": ["Max downtime", "Max dataverlies in tijd", "Max omzetverlies", "Max aantal incidenten"],
+      "correct": 1,
+      "explain": "Recovery Point Objective = maximaal aanvaardbaar dataverlies, gemeten in tijd. Hoe vaak druk je CTRL+S?"
+    },
+    {
+      "q": "RTO = 4 uur, MAO = 3 uur. Wat klopt?",
+      "options": ["Prima, RTO mag kleiner zijn dan MAO", "Onmogelijk: RTO > MAO betekent bedrijf failliet voordat IT klaar is", "MAO moet 4 zijn", "RTO is altijd 1 uur"],
+      "correct": 1,
+      "explain": "MAO is de absolute uiterste grens (RTO + WRT). RTO kan nooit groter zijn dan MAO."
+    },
+    {
+      "q": "Formule MAO?",
+      "options": ["RTO + RPO", "RTO + WRT", "RPO + WRT", "RT + BAU"],
+      "correct": 1,
+      "explain": "MAO = RTO + WRT = totale geoorloofde uitvalstijd voor het bedrijf nog kan herstellen."
+    },
+    {
+      "q": "Welk framework heeft 4 kwadranten?",
+      "options": ["NIST CSF", "ISO 22301", "ENISA RM+BCM", "ITIL"],
+      "correct": 2,
+      "explain": "ENISA: Define / Conduct BIA / Design BCM / Deliver BCP — 4 kwadranten als cyclus."
+    },
+    {
+      "q": "Welk framework heeft 5 functies?",
+      "options": ["NIST CSF", "ENISA", "ISO 22301", "Lean BCM"],
+      "correct": 0,
+      "explain": "NIST CSF: Identify / Protect / Detect / Respond / Recover."
+    },
+    {
+      "q": "ISO 22301 gebruikt welke cyclus?",
+      "options": ["OODA", "PDCA", "DMAIC", "SCRUM"],
+      "correct": 1,
+      "explain": "Plan-Do-Check-Act, de PDCA-cyclus voor continu verbeteren."
+    },
+    {
+      "q": "BCM zit in welke NIST CSF functies vooral?",
+      "options": ["Identify + Protect", "Detect + Respond", "Respond + Recover", "Alle 5"],
+      "correct": 2,
+      "explain": "BCM speelt vooral een rol in Respond (reageren op incident) en Recover (herstellen)."
+    },
+    {
+      "q": "Wat is het verschil tussen ISAE 3402 Type 1 en Type 2?",
+      "options": ["Type 1 is duurder", "Type 1 = snapshot (opzet/bestaan), Type 2 = werking over periode", "Type 2 is voor banken alleen", "Geen verschil"],
+      "correct": 1,
+      "explain": "Type 1 toont opzet+bestaan op een moment. Type 2 toont opzet+bestaan+werking gedurende bv 6-12 maanden."
+    },
+    {
+      "q": "Cloud-provider stuurt Type 1 rapport. Wat doe je?",
+      "options": ["Tevreden zijn", "Type 2 eisen — wil bewijs van WERKING over tijd", "Andere provider zoeken", "Niks, allebei OK"],
+      "correct": 1,
+      "explain": "Voor BCM-vertrouwen in supply chain altijd Type 2 — bewijs dat controls daadwerkelijk werken."
+    },
+    {
+      "q": "Wat is Stap 0 van Lean BCM?",
+      "options": ["BIA uitvoeren", "Workshop houden", "Preventie en Fundament (BHV/brand/Arbo)", "BCP schrijven"],
+      "correct": 2,
+      "explain": "Stap 0 = randvoorwaarde: brand/BHV/IB-baseline/fysieke beveiliging/Arbo. Zonder dit faalt de rest."
+    },
+    {
+      "q": "Wat gebeurt in Stap 1 Lean BCM?",
+      "options": ["IST-SOLL analyse", "Workshop 'red de organisatie' met directie", "Brandblussers vullen", "PDCA cyclus afronden"],
+      "correct": 1,
+      "explain": "Stap 1 = Bedrijfscontinuïteit NU!!! Workshop met directie, 1 dag = werkend BCP."
+    },
+    {
+      "q": "Klassieke BCM methode probleem?",
+      "options": ["Te duur", "Papieren tijger — lang proces, geen quick wins, draagvlak verdwijnt", "Te technisch", "Niet ISO compliant"],
+      "correct": 1,
+      "explain": "Klassieke 10-stappen methode levert maanden papier op zonder zichtbare resultaten."
+    },
+    {
+      "q": "Hoeveel verplichte elementen heeft een BCP?",
+      "options": ["5", "6", "7", "8"],
+      "correct": 3,
+      "explain": "8 elementen, eindigt met Beëindigingsproces (mandaat voor terugkeer naar BAU)."
+    },
+    {
+      "q": "BCP heeft doel, rollen, acties, activatie. Welk element ontbreekt vaak?",
+      "options": ["Activeringscriteria", "Beëindigingsproces", "Implementatie-acties", "Doelstellingen"],
+      "correct": 1,
+      "explain": "Het 8e element: Beëindigingsproces — wie heeft mandaat om crisis af te blazen?"
+    },
+    {
+      "q": "Wat is ITIL?",
+      "options": ["Een softwarepakket", "IT Infrastructure Library — best practice voor IT Service Management", "Een audit-standaard", "Een Nederlands beleidskader"],
+      "correct": 1,
+      "explain": "ITIL is wereldwijd geaccepteerde best practice voor IT Service Management. Origin: UK CCTA, jaren '80."
+    },
+    {
+      "q": "Wat is het hart van ITIL?",
+      "options": ["Incident Management", "Service Level Management (SLM)", "Configuration Management", "Service Desk"],
+      "correct": 1,
+      "explain": "SLM is de kern — balans tussen vraag en aanbod van IT, vastgelegd in SLA's."
+    },
+    {
+      "q": "SLA bevat naast kwaliteitsafspraken ook?",
+      "options": ["Loon-afspraken", "Security paragraaf + BCM/continuity afspraken", "Personeelszaken", "Inkoopcontracten"],
+      "correct": 1,
+      "explain": "Service Level Agreement bevat kwaliteit + security + BCM-afspraken (RTO/RPO/beschikbaarheid)."
+    },
+    {
+      "q": "ITSCM staat voor?",
+      "options": ["IT Security Continuity Management", "IT Service Continuity Management", "IT Strategic Cost Management", "IT System Change Management"],
+      "correct": 1,
+      "explain": "IT Service Continuity Management — de IT-tak van BCM."
+    },
+    {
+      "q": "Verschil Availability MGT en ITSCM?",
+      "options": ["Geen verschil", "Availability voorkomt SPOF-uitval; ITSCM herstelt na ramp", "Availability is voor servers, ITSCM voor netwerken", "ITSCM is duurder"],
+      "correct": 1,
+      "explain": "Availability MGT focust op SPOF (voorkomen). ITSCM focust op herstelproces bij uitval (reageren)."
+    },
+    {
+      "q": "Wanneer start ITSCM?",
+      "options": ["Bij elk incident", "Bij geplande wijzigingen", "Bij rampen (lang verlies van volledig serverpark)", "Bij elke security audit"],
+      "correct": 2,
+      "explain": "ITSCM is voor RAMPEN, niet voor gewone incidenten. Elke org bepaalt zelf wat ramp is."
+    },
+    {
+      "q": "Hoeveel fases heeft ITSCM?",
+      "options": ["3", "4", "5", "7"],
+      "correct": 1,
+      "explain": "4 fases: Initiatie → Requirements & Strategie → Implementatie → Operationeel Management."
+    },
+    {
+      "q": "In welke ITSCM fase voer je BIA + risico-analyse uit?",
+      "options": ["Initiatie", "Requirements & Strategie", "Implementatie", "Operationeel Management"],
+      "correct": 1,
+      "explain": "Fase 2 (Requirements & Strategie) bevat BIA + risicoanalyse + strategie bepalen."
+    },
+    {
+      "q": "Cloud servicemodel waarbij JIJ alleen je software krijgt?",
+      "options": ["IAAS", "PAAS", "SAAS", "On-prem"],
+      "correct": 2,
+      "explain": "SAAS = Software as a Service. Provider beheert alles t/m de applicatie."
+    },
+    {
+      "q": "Cloud servicemodel waar je alleen infra (servers/storage) krijgt?",
+      "options": ["IAAS", "PAAS", "SAAS", "FaaS"],
+      "correct": 0,
+      "explain": "IAAS = Infrastructure as a Service. Jij beheert OS, runtime, apps zelf."
+    },
+    {
+      "q": "Wie communiceert tijdens IT-storing naar de business?",
+      "options": ["Service Desk", "Service Level Manager (SLM)", "CEO", "Incident Manager"],
+      "correct": 1,
+      "explain": "Volgens ITIL: SLM verzorgt de communicatie naar business, niet de Service Desk."
+    },
+    {
+      "q": "Wat is BIV?",
+      "options": ["Bedrijfsplan/Inkoop/Verzekering", "Beschikbaarheid/Integriteit/Vertrouwelijkheid", "Backup/Incident/Veiligheid", "BCP/IRP/Verklaringen"],
+      "correct": 1,
+      "explain": "BIV-factoren zijn de 3 pijlers van informatiebeveiliging — geregistreerd in CMDB."
+    },
+    {
+      "q": "Slimme maatregel bij kantoorbrand zonder uitwijklocatie?",
+      "options": ["Verzekering claimen", "Cloud + BYOD + thuiswerken", "Wachten op nieuw pand", "Failliet gaan"],
+      "correct": 1,
+      "explain": "Cloud + BYOD + thuiswerken faciliteren = snelle slimme maatregel uit Lean BCM."
+    },
+    {
+      "q": "Waarom moet BCP regelmatig getest worden?",
+      "options": ["Verplicht voor verzekering", "IT/supply chains veranderen; PDCA continuous improvement", "Werknemers willen training", "Anders krijg je boete"],
+      "correct": 1,
+      "explain": "ISO 22301 vereist PDCA: testen valideert dat strategie nog werkt na veranderingen."
+    },
+    {
+      "q": "Ontruimingsoefening: nooduitgang klem. In welke ISO 22301 fase los je dit op?",
+      "options": ["Plan", "Do", "Check", "Act"],
+      "correct": 3,
+      "explain": "Check fase identificeert het probleem, Act fase voert de daadwerkelijke verbetering door."
+    },
+    {
+      "q": "Wat is een calamiteitenscenario in Lean BCM?",
+      "options": ["Een verzekeringsclaim", "Beschrijving van calamiteit + gevolgen op huisvesting/personeel/systemen", "Een marketing-plan", "Een audit-rapport"],
+      "correct": 1,
+      "explain": "Calamiteitenscenario = beschrijving incl. impact op 3 gebieden: huisvesting, personeel, systemen."
+    }
+  ]
+}
