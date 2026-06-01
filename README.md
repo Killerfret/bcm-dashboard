@@ -2,7 +2,7 @@
 
 **Business Continuity Management — Mondeling Survival Kit**
 **Cursus:** 25/26 Business Resilience · De Haagse Hogeschool · ISM-2
-**Mondeling:** Woensdag 3 juni 2026 · Analyse Advies fase
+**Mondeling:** Woensdag 3 juni 2026 om 13:30-13:40 · Analyse Advies fase
 
 ---
 
@@ -91,4 +91,4 @@ Wil je het offline gebruiken?
 
 ---
 
-**Made with caffeine en pure paniek door Victor Snoep · 1 juni 2026 · 38 uur voor mondeling**
+**Made with caffeine en pure paniek door Victor Snoep · 1 juni 2026 · ~42 uur voor mondeling**
